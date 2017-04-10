@@ -1,185 +1,181 @@
-# SIPÐ­Òé»ù´¡
+ï»¿# SIPåè®®åŸºç¡€
 
 [TOC]
 
-### 1.SIPÐ­Òé¸ÅÄî
+### 1.SIPåè®®æ¦‚å¿µ
 
-1.1 SIPÐ­Òé
+1.1 SIPåè®®
 
-> SIP Ð­ÒéËäÈ»ÊôÓÚÓ¦ÓÃ²ãÐ­Òé£¬È»¶ø SIP ±¾Éí²¢²»Ìá¹©ÈÎºÎ·þÎñ¡£µ«ÊÇ SIP ÊÇÍ¨ÐÅµÄ»ù´¡£¬ÔÚ SIP Õâ¸öÍ¨ÐÅµÄ»ù´¡ÉÏ¿ÉÒÔÓÃÀ´¹¹½¨²»Í¬µÄ·þÎñ
+> SIP åè®®è™½ç„¶å±žäºŽåº”ç”¨å±‚åè®®ï¼Œç„¶è€Œ SIP æœ¬èº«å¹¶ä¸æä¾›ä»»ä½•æœåŠ¡ã€‚ä½†æ˜¯ SIP æ˜¯é€šä¿¡çš„åŸºç¡€ï¼Œåœ¨ SIP è¿™ä¸ªé€šä¿¡çš„åŸºç¡€ä¸Šå¯ä»¥ç”¨æ¥æž„å»ºä¸åŒçš„æœåŠ¡
 
-SIP£¨»á»°·¢ÆðÐ­Òé£©ÊôÓÚIPÓ¦ÓÃ²ãÐ­Òé£¬ÓÃÓÚÔÚIPÍøÉÏÎªÓÃ»§Ìá¹©»á»°Ó¦ÓÃ¡£»á»°£¨Session£©Ö¸Á½·½»ò¶à·½ÓÃ»§Ö®¼äµÄÓïÒô¡¢ÊÓÆµ¡¢¼°ÆäËûÃ½ÌåÐÎÊ½µÄÍ¨ÐÅ£¬¾ßÌå¿ÉÄÜÊÇIPµç»°¡¢»áÒé¡¢¼´Ê±ÏûÏ¢µÈµÈ
+SIPï¼ˆä¼šè¯å‘èµ·åè®®ï¼‰å±žäºŽIPåº”ç”¨å±‚åè®®ï¼Œç”¨äºŽåœ¨IPç½‘ä¸Šä¸ºç”¨æˆ·æä¾›ä¼šè¯åº”ç”¨ã€‚ä¼šè¯ï¼ˆSessionï¼‰æŒ‡ä¸¤æ–¹æˆ–å¤šæ–¹ç”¨æˆ·ä¹‹é—´çš„è¯­éŸ³ã€è§†é¢‘ã€åŠå…¶ä»–åª’ä½“å½¢å¼çš„é€šä¿¡ï¼Œå…·ä½“å¯èƒ½æ˜¯IPç”µè¯ã€ä¼šè®®ã€å³æ—¶æ¶ˆæ¯ç­‰ç­‰
 
 ![p-sip-0001](https://raw.githubusercontent.com/TongxinV/xxxx001/master/assets/p-sip-0001.gif)
 
-1.2 Ð­ÒéÕ»
+1.2 åè®®æ ˆ
 
-SIPÊÇÒ»¸öÐÅÁîÐ­Òé£¬Ëü¶ÔÓ¦ÓÚ´«Í³µç»°ÍøÂçÖÐµÄºô½ÐÐÅÁîÐ­Òé£¨±ÈÈçSS7 ISUP£©¡£¹¹½¨Ò»¸öÍêÕû¶àÃ½ÌåÍ¨ÐÅ¼Ü¹¹»¹ÐèÒª½áºÏÆäËûÒ»Ð©Ð­Òé£¬±ØÒªµÄÓÐ£ºRTP£¬ÓÃÓÚÃ½Ìå´«Êä£»RSVP£¬ÓÃÓÚQOS±£Ö¤µÈµÈ
+SIPæ˜¯ä¸€ä¸ªä¿¡ä»¤åè®®ï¼Œå®ƒå¯¹åº”äºŽä¼ ç»Ÿç”µè¯ç½‘ç»œä¸­çš„å‘¼å«ä¿¡ä»¤åè®®ï¼ˆæ¯”å¦‚SS7 ISUPï¼‰ã€‚æž„å»ºä¸€ä¸ªå®Œæ•´å¤šåª’ä½“é€šä¿¡æž¶æž„è¿˜éœ€è¦ç»“åˆå…¶ä»–ä¸€äº›åè®®ï¼Œå¿…è¦çš„æœ‰ï¼šRTPï¼Œç”¨äºŽåª’ä½“ä¼ è¾“ï¼›RSVPï¼Œç”¨äºŽQOSä¿è¯ç­‰ç­‰
 
 ![p-sip-0002](https://raw.githubusercontent.com/TongxinV/xxxx001/master/assets/p-sip-0002.gif)
 
-1.3 »ù±¾¹¦ÄÜ
+1.3 åŸºæœ¬åŠŸèƒ½
 
-1.3.1»á»°µÄ·¢ÆðÓë¹ÜÀí
+1.3.1ä¼šè¯çš„å‘èµ·ä¸Žç®¡ç†
 
-> SIPÖ÷ÒªÓÃÓÚ´´½¨¡¢ÐÞ¸ÄºÍÖÕÖ¹Ò»¸ö»á»°
+> SIPä¸»è¦ç”¨äºŽåˆ›å»ºã€ä¿®æ”¹å’Œç»ˆæ­¢ä¸€ä¸ªä¼šè¯
 
-Ò»¸ö**´´½¨»á»°**µÄ¼òµ¥µÄÀý×ÓÈçÏÂÍ¼ËùÊ¾£º
+ä¸€ä¸ª**åˆ›å»ºä¼šè¯**çš„ç®€å•çš„ä¾‹å­å¦‚ä¸‹å›¾æ‰€ç¤ºï¼š
 
 ![p-sip-001][001]
 
 ```
-·¢Æð·½ÏòÄ¿µÄ·½·¢ËÍÒ»¸öSIPÇëÇóÏûÏ¢£¨INVITE£©£¬ÆäÖÐ°üº¬ÌáÒéµÄ»á»°²ÎÊýµÄÃèÊö£¬ÇëÇóÔÚ¶þÕßÖ®¼ä½¨Á¢Ò»¸ö»á»°£»
-Ä¿µÄ·½·µ»ØÒ»¸öSIPÏìÓ¦ÏûÏ¢£¨200 OK£©£¬ÆäÖÐ°üº¬½ÓÊÜµÄ»á»°²ÎÊýµÄÃèÊö£¬½ÓÊÜ»á»°½¨Á¢ÇëÇó
-·¢Æð·½·¢ËÍÒ»¸öSIPÇëÇóÏûÏ¢£¨ACK£©È·ÈÏ»á»°µÄ½¨Á¢¡£
+å‘èµ·æ–¹å‘ç›®çš„æ–¹å‘é€ä¸€ä¸ªSIPè¯·æ±‚æ¶ˆæ¯ï¼ˆINVITEï¼‰ï¼Œå…¶ä¸­åŒ…å«æè®®çš„ä¼šè¯å‚æ•°çš„æè¿°ï¼Œè¯·æ±‚åœ¨äºŒè€…ä¹‹é—´å»ºç«‹ä¸€ä¸ªä¼šè¯ï¼›
+ç›®çš„æ–¹è¿”å›žä¸€ä¸ªSIPå“åº”æ¶ˆæ¯ï¼ˆ200 OKï¼‰ï¼Œå…¶ä¸­åŒ…å«æŽ¥å—çš„ä¼šè¯å‚æ•°çš„æè¿°ï¼ŒæŽ¥å—ä¼šè¯å»ºç«‹è¯·æ±‚
+å‘èµ·æ–¹å‘é€ä¸€ä¸ªSIPè¯·æ±‚æ¶ˆæ¯ï¼ˆACKï¼‰ç¡®è®¤ä¼šè¯çš„å»ºç«‹ã€‚
 ```
 
-Ò»¸ö**ÐÞ¸Ä»á»°**µÄ¼òµ¥Àý×ÓÈçÏÂÍ¼ËùÊ¾£º
+ä¸€ä¸ª**ä¿®æ”¹ä¼šè¯**çš„ç®€å•ä¾‹å­å¦‚ä¸‹å›¾æ‰€ç¤ºï¼š
 
 ![p-sip-002][002]
 
 ```
-»á»°ÖÐµÄÈÎÒâÒ»·½¿ÉÒÔ·¢ËÍÒ»¸öSIPÇëÇóÏûÏ¢£¨reINVITE£©£¬ÆäÖÐ°üº¬ÌáÒéµÄÐÂµÄ»á»°²ÎÊý£¬ÇëÇóÐÞ¸Ä¶þÕßÖ®¼äµÄ»á»°£»
-ÁíÒ»·½·µ»ØÒ»¸öSIPÏìÓ¦ÏûÏ¢£¨200 OK£©£¬ÆäÖÐ°üº¬½ÓÊÜµÄÐÂµÄ»á»°²ÎÊý£¬½ÓÊÜ»á»°ÐÞ¸ÄÇëÇó
+ä¼šè¯ä¸­çš„ä»»æ„ä¸€æ–¹å¯ä»¥å‘é€ä¸€ä¸ªSIPè¯·æ±‚æ¶ˆæ¯ï¼ˆreINVITEï¼‰ï¼Œå…¶ä¸­åŒ…å«æè®®çš„æ–°çš„ä¼šè¯å‚æ•°ï¼Œè¯·æ±‚ä¿®æ”¹äºŒè€…ä¹‹é—´çš„ä¼šè¯ï¼›
+å¦ä¸€æ–¹è¿”å›žä¸€ä¸ªSIPå“åº”æ¶ˆæ¯ï¼ˆ200 OKï¼‰ï¼Œå…¶ä¸­åŒ…å«æŽ¥å—çš„æ–°çš„ä¼šè¯å‚æ•°ï¼ŒæŽ¥å—ä¼šè¯ä¿®æ”¹è¯·æ±‚
 ```
 
-Ò»¸ö**½áÊø»á»°**µÄ¼òµ¥Àý×ÓÈçÏÂÍ¼ËùÊ¾£º
+ä¸€ä¸ª**ç»“æŸä¼šè¯**çš„ç®€å•ä¾‹å­å¦‚ä¸‹å›¾æ‰€ç¤ºï¼š
 
 ![p-sip-003][003]
 
 ```
-»á»°ÖÐµÄÈÎÒâÒ»·½¿ÉÒÔ·¢ËÍÒ»¸öSIPÇëÇóÏûÏ¢£¨BYE£©£¬ÇëÇó½áÊø»á»°£»
-ÁíÒ»·½·µ»ØÒ»¸öSIPÏìÓ¦ÏûÏ¢£¨200 OK£©£¬½ÓÊÜ»á»°½áÊøÇëÇó
+ä¼šè¯ä¸­çš„ä»»æ„ä¸€æ–¹å¯ä»¥å‘é€ä¸€ä¸ªSIPè¯·æ±‚æ¶ˆæ¯ï¼ˆBYEï¼‰ï¼Œè¯·æ±‚ç»“æŸä¼šè¯ï¼›
+å¦ä¸€æ–¹è¿”å›žä¸€ä¸ªSIPå“åº”æ¶ˆæ¯ï¼ˆ200 OKï¼‰ï¼ŒæŽ¥å—ä¼šè¯ç»“æŸè¯·æ±‚
 ```
 
-1.3.2 ÓÃ»§Î»ÖÃ¹ÜÀí
+1.3.2 ç”¨æˆ·ä½ç½®ç®¡ç†
 
-> ÓÃÓÚÖ§³ÖÓÃ»§£¨ÖÕ¶Ë£©µÄÒÆ¶¯ÐÔ¡£²Â²â²ÎÓëµÄ·þÎñÆ÷Îª×¢²á·þÎñÆ÷£¨Register Server£©¼ÓÎ»ÖÃ·þÎñÆ÷£¨Location Server£©
+> ç”¨äºŽæ”¯æŒç”¨æˆ·ï¼ˆç»ˆç«¯ï¼‰çš„ç§»åŠ¨æ€§ã€‚çŒœæµ‹å‚ä¸Žçš„æœåŠ¡å™¨ä¸ºæ³¨å†ŒæœåŠ¡å™¨ï¼ˆRegister Serverï¼‰åŠ ä½ç½®æœåŠ¡å™¨ï¼ˆLocation Serverï¼‰
 
 ![p-sip-004][004]
 
 
-### 2.SIPÌåÏµ½á¹¹(»ù±¾ÍøÂçÄ£ÐÍ)
+### 2.SIPä½“ç³»ç»“æž„(åŸºæœ¬ç½‘ç»œæ¨¡åž‹)
 
-> SIPÐ­Òé×é¼þ£ºSIP ÓÃ»§´úÀí£¨User Agent£¬UA£©ºÍ SIP ÓÃ»§·þÎñÆ÷£¨User Server£¬US£©
+> SIPåè®®ç»„ä»¶ï¼šSIP ç”¨æˆ·ä»£ç†ï¼ˆUser Agentï¼ŒUAï¼‰å’Œ SIP ç”¨æˆ·æœåŠ¡å™¨ï¼ˆUser Serverï¼ŒUSï¼‰
 
 ![p-sip-005][005]
 
-**ÓÃ»§´úÀíUA**±¾ÉíÓÖ¿É·ÖÎª£º¿Í»§»ú¶ËUAC£¨User Agent Client£¬ÓÃ»§´úÀí¿Í»§»ú£©ºÍ·þÎñÆ÷¶ËUAS£¨User Agent Server£¬ÓÃ»§´úÀí·þÎñÆ÷£©¡£ÓÃ»§´úÀí¿Í»§»úÊÇ·¢ÆðÇëÇóµÄÖ÷½ÐÓ¦ÓÃ£»¿Í»§´úÀí·þÎñÆ÷ÊÇÍ¨»°µÄ±»ºô½Ð¶Ë£¬Ö÷Òª¸ºÔð½ÓÊÜ¡¢ÖØ¶¨Ïò»òÕß¾Ü¾øÇëÇó£¬¸øµ½À´µÄÇëÇó·¢ËÍÏìÓ¦¡£ÓÃ»§´úÀíÔÚ·¢Æðºô½ÐµÄÊ±ºòËüÊÇÓÃ»§´úÀí¿Í»§¶Ë£¬¶øµ±±»ºô½ÐµÄÊ±ºòËüÊÇÓÃ»§´úÀí·þÎñÆ÷¶Ë
+**ç”¨æˆ·ä»£ç†UA**æœ¬èº«åˆå¯åˆ†ä¸ºï¼šå®¢æˆ·æœºç«¯UACï¼ˆUser Agent Clientï¼Œç”¨æˆ·ä»£ç†å®¢æˆ·æœºï¼‰å’ŒæœåŠ¡å™¨ç«¯UASï¼ˆUser Agent Serverï¼Œç”¨æˆ·ä»£ç†æœåŠ¡å™¨ï¼‰ã€‚ç”¨æˆ·ä»£ç†å®¢æˆ·æœºæ˜¯å‘èµ·è¯·æ±‚çš„ä¸»å«åº”ç”¨ï¼›å®¢æˆ·ä»£ç†æœåŠ¡å™¨æ˜¯é€šè¯çš„è¢«å‘¼å«ç«¯ï¼Œä¸»è¦è´Ÿè´£æŽ¥å—ã€é‡å®šå‘æˆ–è€…æ‹’ç»è¯·æ±‚ï¼Œç»™åˆ°æ¥çš„è¯·æ±‚å‘é€å“åº”ã€‚ç”¨æˆ·ä»£ç†åœ¨å‘èµ·å‘¼å«çš„æ—¶å€™å®ƒæ˜¯ç”¨æˆ·ä»£ç†å®¢æˆ·ç«¯ï¼Œè€Œå½“è¢«å‘¼å«çš„æ—¶å€™å®ƒæ˜¯ç”¨æˆ·ä»£ç†æœåŠ¡å™¨ç«¯
 
-**ÓÃ»§·þÎñÆ÷US**ÊÇ SIP ÏûÏ¢ÔÚµ½´ïÆä×îÖÕÄ¿µÄµØÇ°Ëù¾­¹ýµÄÂß¼­½Úµã£¬ÕâÐ©·þÎñÆ÷ÓÃÓÚ¶ÔÇëÇó½øÐÐÂ·ÓÉºÍÖØ¶¨Ïò£¬¼È½øÐÐÃû×Ö½âÎöºÍÓÃ»§¶¨Î»¡£Ö÷Òª°üÀ¨ÒÔÏÂ¼¸ÖÖ·þÎñÆ÷£º
+**ç”¨æˆ·æœåŠ¡å™¨US**æ˜¯ SIP æ¶ˆæ¯åœ¨åˆ°è¾¾å…¶æœ€ç»ˆç›®çš„åœ°å‰æ‰€ç»è¿‡çš„é€»è¾‘èŠ‚ç‚¹ï¼Œè¿™äº›æœåŠ¡å™¨ç”¨äºŽå¯¹è¯·æ±‚è¿›è¡Œè·¯ç”±å’Œé‡å®šå‘ï¼Œæ—¢è¿›è¡Œåå­—è§£æžå’Œç”¨æˆ·å®šä½ã€‚ä¸»è¦åŒ…æ‹¬ä»¥ä¸‹å‡ ç§æœåŠ¡å™¨ï¼š
 ```
-×¢²á·þÎñÆ÷£¨Registrar Server£©£º¸ºÔð½ÓÊÕºÍ´¦Àí REGISTER ÇëÇóµÄ·þÎñÆ÷£»
-ÓÐ×´Ì¬´úÀí·þÎñÆ÷£¨Proxy Server£©£º¸ºÔð½ÓÊÕºÍ×ª·¢SIPÇëÇó¡£¿É½âÎö²¢ÖØ¹¹SIPÏûÏ¢µÄ²¿·ÖÐÅÏ¢¡£µ«ÊÇÕâÐ©ÖØ¹¹²»»áÓ°ÏìÇëÇó»ò»á»°µÄ×´Ì¬
-ÎÞ×´Ì¬´úÀí·þÎñÆ÷£¨Stateless Server£©£ºÆä¸ºÔð½«ÉÏÓÎµÄÇëÇóÏòÏÂÓÎ×ª·¢ºÍ½«ÏÂÓÎµÄÏìÓ¦ÏòÉÏÓÎ×ª·¢£¬Æä²»¼ÍÂ¼ÇëÇó»ò»á»°µÄ×´Ì¬
-ÖØ¶¨Ïò·þÎñÆ÷£¨Redirect Server£©£º¸ºÔð½«ÇëÇóµÄµØÖ·Ó³ÉäÎªÐÂµØÖ·£»Ëü¶ÔÇëÇó½øÐÐÖØ¶¨Ïòµ«ÊÇ²»²ÎÓëÊÂÎñµÄ´¦Àí
-Î»ÖÃ·þÎñÆ÷£¨Location Server£©£º¸ú×ÙÓÃ»§µÄÎ»ÖÃ£»
+æ³¨å†ŒæœåŠ¡å™¨ï¼ˆRegistrar Serverï¼‰ï¼šè´Ÿè´£æŽ¥æ”¶å’Œå¤„ç† REGISTER è¯·æ±‚çš„æœåŠ¡å™¨ï¼›
+æœ‰çŠ¶æ€ä»£ç†æœåŠ¡å™¨ï¼ˆProxy Serverï¼‰ï¼šè´Ÿè´£æŽ¥æ”¶å’Œè½¬å‘SIPè¯·æ±‚ã€‚å¯è§£æžå¹¶é‡æž„SIPæ¶ˆæ¯çš„éƒ¨åˆ†ä¿¡æ¯ã€‚ä½†æ˜¯è¿™äº›é‡æž„ä¸ä¼šå½±å“è¯·æ±‚æˆ–ä¼šè¯çš„çŠ¶æ€
+æ— çŠ¶æ€ä»£ç†æœåŠ¡å™¨ï¼ˆStateless Serverï¼‰ï¼šå…¶è´Ÿè´£å°†ä¸Šæ¸¸çš„è¯·æ±‚å‘ä¸‹æ¸¸è½¬å‘å’Œå°†ä¸‹æ¸¸çš„å“åº”å‘ä¸Šæ¸¸è½¬å‘ï¼Œå…¶ä¸çºªå½•è¯·æ±‚æˆ–ä¼šè¯çš„çŠ¶æ€
+é‡å®šå‘æœåŠ¡å™¨ï¼ˆRedirect Serverï¼‰ï¼šè´Ÿè´£å°†è¯·æ±‚çš„åœ°å€æ˜ å°„ä¸ºæ–°åœ°å€ï¼›å®ƒå¯¹è¯·æ±‚è¿›è¡Œé‡å®šå‘ä½†æ˜¯ä¸å‚ä¸Žäº‹åŠ¡çš„å¤„ç†
+ä½ç½®æœåŠ¡å™¨ï¼ˆLocation Serverï¼‰ï¼šè·Ÿè¸ªç”¨æˆ·çš„ä½ç½®ï¼›
 ```
 
-### 3.SIPÐ­Òé½á¹¹
+### 3.SIPåè®®ç»“æž„
 
-> ÊÂÎñÓÃ»§²ã\ÊÂÎñ²ã\´«Êä²ã\Óï·¨ºÍ±àÂë²ã
+> äº‹åŠ¡ç”¨æˆ·å±‚\äº‹åŠ¡å±‚\ä¼ è¾“å±‚\è¯­æ³•å’Œç¼–ç å±‚
 
-ÔÝÊ±Ã»Óöµ½ÒªÈ¥·ÖÎöÕâÒ»²ãÃæµÄÄÚÈÝ£¬ÓÐ¿ÕÔÙ²¹³ä
+æš‚æ—¶æ²¡é‡åˆ°è¦åŽ»åˆ†æžè¿™ä¸€å±‚é¢çš„å†…å®¹ï¼Œæœ‰ç©ºå†è¡¥å……
 
 
-### 4.SIPÊÂÎñÓëSIPÏûÏ¢
+### 4.SIPäº‹åŠ¡ä¸ŽSIPæ¶ˆæ¯
 
-> SIPÃ¿¸ö²Ù×÷ÌåÏÖÎªÒ»¸öËùÎ½µÄÊÂÎñ(ÓÉÒ»¸örequest¡¢0µ½¶à¸öÁÙÊ±responseÒÔ¼°Ò»¸ö×îÖÕresponse×é³É)
+> SIPæ¯ä¸ªæ“ä½œä½“çŽ°ä¸ºä¸€ä¸ªæ‰€è°“çš„äº‹åŠ¡(ç”±ä¸€ä¸ªrequestã€0åˆ°å¤šä¸ªä¸´æ—¶responseä»¥åŠä¸€ä¸ªæœ€ç»ˆresponseç»„æˆ)
 
-**SIPÊÂÎñ**£ºSIPËùÌá¹©µÄ¹¦ÄÜ(±ÈÈçÓïÒôÒµÎñ¡¢Èý·½Í¨»°µÈ)ÊÇÍ¨¹ýÒ»Ð©Ô­×ÓÐÔµÄ»ù±¾¹¦ÄÜ£¨±ÈÈç×¢²á£¨registration£©£¬·¢Æð»á»°£¨Initiation£©¡¢»á»°½áÊøµÈ£©**×éºÏ**¶ø³É¡£Ã¿¸öÔ­×ÓÐÔ»ù±¾¹¦ÄÜÊÇÍ¨¹ýÒ»¸öSIP²Ù×÷Íê³ÉµÄ¡£SIP²Ù×÷»ùÓÚÀàËÆHTTPµÄÇëÇó/ÏìÓ¦ÊÂÎñÄ£ÐÍ£¬Ã¿¸ö²Ù×÷µÄµ÷ÓÃ¹ý³ÌÌåÏÖÎªÒ»¸öËùÎ½**ÊÂÎñ**¡£ÆäÖÐSIPÇëÇóÏûÏ¢ÖÐµÄ·½·¨£¨Method£©Ö¸Ê¾³öµ÷ÓÃµÄ²Ù×÷
+**SIPäº‹åŠ¡**ï¼šSIPæ‰€æä¾›çš„åŠŸèƒ½(æ¯”å¦‚è¯­éŸ³ä¸šåŠ¡ã€ä¸‰æ–¹é€šè¯ç­‰)æ˜¯é€šè¿‡ä¸€äº›åŽŸå­æ€§çš„åŸºæœ¬åŠŸèƒ½ï¼ˆæ¯”å¦‚æ³¨å†Œï¼ˆregistrationï¼‰ï¼Œå‘èµ·ä¼šè¯ï¼ˆInitiationï¼‰ã€ä¼šè¯ç»“æŸç­‰ï¼‰**ç»„åˆ**è€Œæˆã€‚æ¯ä¸ªåŽŸå­æ€§åŸºæœ¬åŠŸèƒ½æ˜¯é€šè¿‡ä¸€ä¸ªSIPæ“ä½œå®Œæˆçš„ã€‚SIPæ“ä½œåŸºäºŽç±»ä¼¼HTTPçš„è¯·æ±‚/å“åº”äº‹åŠ¡æ¨¡åž‹ï¼Œæ¯ä¸ªæ“ä½œçš„è°ƒç”¨è¿‡ç¨‹ä½“çŽ°ä¸ºä¸€ä¸ªæ‰€è°“**äº‹åŠ¡**ã€‚å…¶ä¸­SIPè¯·æ±‚æ¶ˆæ¯ä¸­çš„æ–¹æ³•ï¼ˆMethodï¼‰æŒ‡ç¤ºå‡ºè°ƒç”¨çš„æ“ä½œ
 
 ![p-sip-006][006]
 
-ÏÂ±íÊÇÔÚRFC 3261ÖÐ¶¨ÒåµÄÒ»Ð©»ù±¾·½·¨¼°Æä¶ÔÓ¦µÄSIP²Ù×÷(²»ÊÇÈ«²¿):
+ä¸‹è¡¨æ˜¯åœ¨RFC 3261ä¸­å®šä¹‰çš„ä¸€äº›åŸºæœ¬æ–¹æ³•åŠå…¶å¯¹åº”çš„SIPæ“ä½œ(ä¸æ˜¯å…¨éƒ¨):
 
-| ·½·¨Method    | SIP²Ù×÷(ÊÂÎñ)  | 
+| æ–¹æ³•Method    | SIPæ“ä½œ(äº‹åŠ¡)  | 
 | :------------ |:---------------|
-| INVITE        | »á»°ÑûÇë(ÐÞ¸Ä) |
-| ACK           | È·ÈÏ»á»°ÑûÇë   | 
-| CANCEL        | È¡Ïû»á»°ÑûÇë   | 
-| BYE           | ½áÊø»á»°       |
-| REGISTER      | ×¢²á           | 
-| OPTIONS       | ²éÑ¯·þÎñÆ÷ÄÜÁ¦ |
+| INVITE        | ä¼šè¯é‚€è¯·(ä¿®æ”¹) |
+| ACK           | ç¡®è®¤ä¼šè¯é‚€è¯·   | 
+| CANCEL        | å–æ¶ˆä¼šè¯é‚€è¯·   | 
+| BYE           | ç»“æŸä¼šè¯       |
+| REGISTER      | æ³¨å†Œ           | 
+| OPTIONS       | æŸ¥è¯¢æœåŠ¡å™¨èƒ½åŠ› |
 
-**SIPÏûÏ¢**£ºSIP ÏûÏ¢ÓÐÁ½Àà£ºÇëÇóÏûÏ¢£¨request£©ºÍÏìÓ¦ÏûÏ¢£¨response£©¡£³ýÁËµÚÒ»ÐÐ·Ö±ðÊÇÇëÇóÐÐ£¨Request-Line£©ºÍ×´Ì¬ÐÐ£¨Status-Line£©ÒÔÍâ(ÓÐÍ³³ÆÎªÆðÊ¼ÐÐstart line)£¬SIPÇëÇóÏûÏ¢ºÍSIPÏìÓ¦ÏûÏ¢µÄÊ£ÏÂ²¿·ÖµÄ×é³É»ù±¾ÀàËÆ£¬°üÀ¨ÏûÏ¢Í·Óò£¨message header£©ºÍÏûÏ¢Ìå£¨message body£©Á½²¿·Ö
+**SIPæ¶ˆæ¯**ï¼šSIP æ¶ˆæ¯æœ‰ä¸¤ç±»ï¼šè¯·æ±‚æ¶ˆæ¯ï¼ˆrequestï¼‰å’Œå“åº”æ¶ˆæ¯ï¼ˆresponseï¼‰ã€‚é™¤äº†ç¬¬ä¸€è¡Œåˆ†åˆ«æ˜¯è¯·æ±‚è¡Œï¼ˆRequest-Lineï¼‰å’ŒçŠ¶æ€è¡Œï¼ˆStatus-Lineï¼‰ä»¥å¤–(æœ‰ç»Ÿç§°ä¸ºèµ·å§‹è¡Œstart line)ï¼ŒSIPè¯·æ±‚æ¶ˆæ¯å’ŒSIPå“åº”æ¶ˆæ¯çš„å‰©ä¸‹éƒ¨åˆ†çš„ç»„æˆåŸºæœ¬ç±»ä¼¼ï¼ŒåŒ…æ‹¬æ¶ˆæ¯å¤´åŸŸï¼ˆmessage headerï¼‰å’Œæ¶ˆæ¯ä½“ï¼ˆmessage bodyï¼‰ä¸¤éƒ¨åˆ†
 
 ![p-sip-007][007]
 
-#### SIPÇëÇóÏûÏ¢
 
-¸ù¾ÝÇëÇóÐÐÖÐµÄ·½·¨(method)µÄ²»Í¬£¬SIPÇëÇóÏûÏ¢ÓÐºÜ¶àÖÖ£¬·Ö±ðÍê³É¸÷ÖÖ²Ù×÷µÄµ÷ÓÃ£¬²»Í¬²Ù×÷¿ÉÒÔ×ÔÓÉ×éºÏÒÔÊµÏÖ¸÷ÖÖ¹¦ÄÜ£¬ÏÂÃæ½øÐÐ¼òµ¥µÄ½éÉÜ£º
 
-* INVITE/**reINVITE**£ºINVITE ·¢Æð»á»°ÑûÇë¡£reINVITE£¨ÔÚÒÑ´æÔÚµÄ¶Ô»°ÖÐ·¢ËÍµÄINVITE³ÆÎªreINVITE£©ÐÞ¸ÄÒÑ½¨Á¢»á»°µÄ²ÎÊý
-* ACK£ºÍê³É»á»°½¨Á¢µÄ3´ÎÎÕÊÖ [INVITE-200-ACK],½ö½öÓÃÓÚINVITE
-* BYE £º½áÊø»á»°¡£
-* CANCEL£ºÈ¡ÏûÕýÔÚ½¨Á¢ÖÐ»á»°(INVITEÒÑ·¢ËÍ£¬µ«ÉÐÎ´ÊÕµ½×îÖÕÏìÓ¦£¨final response£©)¡£
-* **UPDATE**£º¸üÐÂ»á»°²ÎÊý¡£Ëü±»½¨ÒéÓÃÓÚÌæ´úre-INVITE£¬Óëre-INVITE²»Í¬ÔÚÓÚ£ºËü¿ÉÒÔÔÚ³õÊ¼INVITEÎ´Íê³ÉÊ±·¢ËÍ£¬ÄÜÓÃÓÚÔÚÔç¶Ô»°(early dialog)ÖÐ¸üÐÂ»á»°²ÎÊý¡£
+#### SIPè¯·æ±‚æ¶ˆæ¯
 
-ÉÏÃæµÄ5¸öÇëÇó¿ÉÓÃÓÚ»á»°½¨Á¢Óë¹ÜÀí
+æ ¹æ®è¯·æ±‚è¡Œä¸­çš„æ–¹æ³•(method)çš„ä¸åŒï¼ŒSIPè¯·æ±‚æ¶ˆæ¯æœ‰å¾ˆå¤šç§ï¼Œåˆ†åˆ«å®Œæˆå„ç§æ“ä½œçš„è°ƒç”¨ï¼Œä¸åŒæ“ä½œå¯ä»¥è‡ªç”±ç»„åˆä»¥å®žçŽ°å„ç§åŠŸèƒ½ï¼Œä¸‹é¢è¿›è¡Œç®€å•çš„ä»‹ç»ï¼š
 
-* REGISTER£ºµÇ¼ÇUAµ±Ç°µÄÁªÏµµØÖ·£¨contact£©
-* OPTIONS£º²éÑ¯·þÎñÆ÷»ò¶Ô¶ËUAµÄÄÜÁ¦£¬¾ßÌå°üÀ¨Ö§³ÖµÄ·½·¨£¨method£©£¬À©Õ¹£¨extensions£©¡¢±à½âÂë£¨codecs£©µÈ¡£
-* PRACK£ºÁÙÊ±ÏìÓ¦£¨Provisional Response£©È·ÈÏ¡£ÓÃÓÚÈ·ÈÏÊÕµ½ÁËÁÙÊ±ÏìÓ¦£¬ÀýÈç ¡°183 Session  Progress¡±£¬ÒÔÖ§³ÖÁÙÊ±ÏìÓ¦µÄ¿É¿¿´«ËÍ¡£Ëü²»ÄÜÓ¦ÓÃÓÚ¡°100 Trying ¡±£¬Ö»ÓÐ101¡«199 ÁÙÊ±ÏìÓ¦ÐèÒª¿É¿¿´«ËÍ¡£Èç¹ûÃ»ÓÐÊÕµ½ PRACK£¬ÏìÓ¦ÏûÏ¢½«±»ÖØ´«¡£
+* INVITE/**reINVITE**ï¼šINVITE å‘èµ·ä¼šè¯é‚€è¯·ã€‚reINVITEï¼ˆåœ¨å·²å­˜åœ¨çš„å¯¹è¯ä¸­å‘é€çš„INVITEç§°ä¸ºreINVITEï¼‰ä¿®æ”¹å·²å»ºç«‹ä¼šè¯çš„å‚æ•°
+* ACKï¼šå®Œæˆä¼šè¯å»ºç«‹çš„3æ¬¡æ¡æ‰‹ [INVITE-200-ACK],ä»…ä»…ç”¨äºŽINVITE
+* BYE ï¼šç»“æŸä¼šè¯ã€‚
+* CANCELï¼šå–æ¶ˆæ­£åœ¨å»ºç«‹ä¸­ä¼šè¯(INVITEå·²å‘é€ï¼Œä½†å°šæœªæ”¶åˆ°æœ€ç»ˆå“åº”ï¼ˆfinal responseï¼‰)ã€‚
+* **UPDATE**ï¼šæ›´æ–°ä¼šè¯å‚æ•°ã€‚å®ƒè¢«å»ºè®®ç”¨äºŽæ›¿ä»£re-INVITEï¼Œä¸Žre-INVITEä¸åŒåœ¨äºŽï¼šå®ƒå¯ä»¥åœ¨åˆå§‹INVITEæœªå®Œæˆæ—¶å‘é€ï¼Œèƒ½ç”¨äºŽåœ¨æ—©å¯¹è¯(early dialog)ä¸­æ›´æ–°ä¼šè¯å‚æ•°ã€‚
+
+ä¸Šé¢çš„5ä¸ªè¯·æ±‚å¯ç”¨äºŽä¼šè¯å»ºç«‹ä¸Žç®¡ç†
+
+* REGISTERï¼šç™»è®°UAå½“å‰çš„è”ç³»åœ°å€ï¼ˆcontactï¼‰
+* OPTIONSï¼šæŸ¥è¯¢æœåŠ¡å™¨æˆ–å¯¹ç«¯UAçš„èƒ½åŠ›ï¼Œå…·ä½“åŒ…æ‹¬æ”¯æŒçš„æ–¹æ³•ï¼ˆmethodï¼‰ï¼Œæ‰©å±•ï¼ˆextensionsï¼‰ã€ç¼–è§£ç ï¼ˆcodecsï¼‰ç­‰ã€‚
  
-* NOTIFY£ºÊÂ¼þÍ¨Öª£¬¾ßÌåµÄÊÂ¼þ°üÀ¨¡¢ÒµÎñ×´Ì¬µÄ¸Ä±ä£¨MWI£¬...£©£¬ÓÃ»§×´Ì¬µÄ¸Ä±äµÈµÈ¡£
-* SUBSCRIBE£º¶©ÔÄ/È¡Ïû(Expires=0£©ÊÂ¼þÍ¨Öª¡£
-* PUBLISH£º·¢²¼ÊÂ¼þ×´Ì¬¡£PUBLISHÓëREGISTERµÄÏàËÆÖ®´¦ÔÚÓÚ£ºÔÊÐíÓÃ»§ÔÚÁíÒ»¸öÊµÌå£¨×´Ì¬¹ÜÀíÊµÌå/registrar£©ÖÐ´´½¨¡¢ÐÞ¸ÄºÍÒÆ³ý×Ô¼ºµÄ×´Ì¬¡£¶ÔPUBLISH ÇëÇóµÄÑ°Ö·Óë¶ÔÓÚSUBSCRIBE ÇëÇóµÄÑ°Ö·ÊÇÒ»ÑùµÄ£¬PUBLISH ÇëÇóµÄRequest-URI ÖÐÌîÈëµÄÊÇÓÃ»§Ï£Íû·¢²¼ÆäÊÂ¼þ×´Ì¬µÄ×ÊÔ´µØÖ·
+* NOTIFYï¼šäº‹ä»¶é€šçŸ¥ï¼Œå…·ä½“çš„äº‹ä»¶åŒ…æ‹¬ã€ä¸šåŠ¡çŠ¶æ€çš„æ”¹å˜ï¼ˆMWIï¼Œ...ï¼‰ï¼Œç”¨æˆ·çŠ¶æ€çš„æ”¹å˜ç­‰ç­‰ã€‚
+* SUBSCRIBEï¼šè®¢é˜…/å–æ¶ˆ(Expires=0ï¼‰äº‹ä»¶é€šçŸ¥ã€‚
+* PUBLISHï¼šå‘å¸ƒäº‹ä»¶çŠ¶æ€ã€‚PUBLISHä¸ŽREGISTERçš„ç›¸ä¼¼ä¹‹å¤„åœ¨äºŽï¼šå…è®¸ç”¨æˆ·åœ¨å¦ä¸€ä¸ªå®žä½“ï¼ˆçŠ¶æ€ç®¡ç†å®žä½“/registrarï¼‰ä¸­åˆ›å»ºã€ä¿®æ”¹å’Œç§»é™¤è‡ªå·±çš„çŠ¶æ€ã€‚å¯¹PUBLISH è¯·æ±‚çš„å¯»å€ä¸Žå¯¹äºŽSUBSCRIBE è¯·æ±‚çš„å¯»å€æ˜¯ä¸€æ ·çš„ï¼ŒPUBLISH è¯·æ±‚çš„Request-URI ä¸­å¡«å…¥çš„æ˜¯ç”¨æˆ·å¸Œæœ›å‘å¸ƒå…¶äº‹ä»¶çŠ¶æ€çš„èµ„æºåœ°å€
 
-ÉÏÃæµÄ3¸öÇëÇó¿É¹¹³ÉSIPÊÂ¼þ·¢²¼-¶©ÔÄ-Í¨Öª»úÖÆ
+ä¸Šé¢çš„3ä¸ªè¯·æ±‚å¯æž„æˆSIPäº‹ä»¶å‘å¸ƒ-è®¢é˜…-é€šçŸ¥æœºåˆ¶
 
-* INFO£ºÓÃÓÚ´«ËÍ mid-call ÐÅÁîÐÅÏ¢£¬Í¬Ò»Ê±¿ÌÖ»ÄÜÓÐÒ»¸ö INFO ÊÂÎñ´æÔÚ¡£Í¨³£ÓÃÓÚÐ¯´ø PSTN ÐÅÁîÏûÏ¢£¨×÷Îª MIME ¸½¼þ£©£¬ÀýÈç£¬ISDN UUI £¨ÓÃ»§µ½ÓÃ»§ÐÅÏ¢£©¡£
-* MESSAGE£ºÕë¶Ô¼´Ê±ÏûÏ¢ (IM)µÄÀ©Õ¹£¬ÓÃÓÚ´«ËÍ¼´Ê±ÏûÏ¢¡£MESSAGEÇëÇóÍ¨¹ýMIME¸½¼þÖÐÐ¯´øÄÚÈÝ¡£MESSAGE ÇëÇó×ÔÉí²»·¢Æð SIP ¶Ô»°£¬ÔÚÕý³£µÄÓÃ·¨ÖÐ£¬Ã¿¸ö¼´Ê±ÏûÏ¢¶¼ÊÇµ¥¶À´æÔÚµÄ£¬·Ç³£ÀàËÆ pager ÏûÏ¢¡£MESSAGE ÇëÇó¿ÉÒÔÔÚÆäËûSIPÇëÇó·¢ÆðµÄ¶Ô»°ÉÏÏÂÎÄÖÐ·¢ËÍ¡£
-* **REFER**£ºÖ¸Ê¾½ÓÊÕÕß (Request-URIËù±êÊ¶µÄ) Ó¦¸ÃÊ¹ÓÃÇëÇóÖÐÌá¹©µÄÐÅÏ¢ÁªÏµµÚÈý·½¡£µäÐÍÓ¦ÓÃ£ºCall Transfer features ¡£Allowed outside an established dialogue¡£
+* INFOï¼šå‘é€ä¼šè¯ä¸­ä¿¡æ¯è€Œä¸æ”¹å˜ä¼šè¯çŠ¶æ€
+* MESSAGEï¼šé€šè¿‡åœ¨å…¶è¯·æ±‚ä½“ä¸­æ‰¿è½½å³æ—¶æ¶ˆæ¯å†…å®¹å®žçŽ°å³æ—¶é€šè®¯
+* PRACKï¼šç”¨äºŽå›žå¤ä¸€ä¸ªä¸´æ—¶æ€§çš„è¯·æ±‚
+* **REFER**ï¼šä½¿ç”¨è¿™ä¸ªREFERæŒ‡å‘å¦ä¸€ä¸ªç”µè¯ï¼Œä»Žè€Œå®Œæˆcall transferï¼Œè”ç³»ç¬¬ä¸‰æ–¹
 
-#### SIPÏìÓ¦ÏûÏ¢
+
+#### SIPå“åº”æ¶ˆæ¯
 
 
-|×´Ì¬Âë|ÃèÊö|Àý×Ó|
+|çŠ¶æ€ç |æè¿°|ä¾‹å­|
 |:---|:---|:---|
-|1xx | Informational<br>ÇëÇóÊÕµ½£¬´¦ÀíÖÐ             | 180 Ringing<br>181 Call is Being Forwarded |
-|2xx | Success<br>²Ù×÷ÒÑ³É¹¦Íê³É                     | 200 OK|
-|3xx | Redirection<br>ÇëÇó±»ÖØ¶¨Ïò                   | 300 Multiple Choices<br>302 Moved Temporarily|
-|4xx | Client Error<br>ÇëÇó°üº¬´íÎóµÄÎÄ·¨£¬»òÕßÎÞ·¨ÔÚ±¾·þÎñÆ÷ÉÏÍê³É | 401 Unauthorized<br>408 Request Timeout
-|5xx | Server Error<br>ÇëÇóÓÐÐ§£¬µ«·þÎñÆ÷ÎÞ·¨Íê³É    | 503 Service Unavailable<br>505 Version Not Supported
-|6xx | Global Failure<br>ÇëÇóÔÚÈÎºÎ·þÎñÆ÷ÉÏ¶¼ÎÞ·¨Íê³É| 600 Busy Everywhere<br>603 Decline
+|1xx | Informational<br>è¯·æ±‚æ”¶åˆ°ï¼Œå¤„ç†ä¸­             | 180 Ringing<br>181 Call is Being Forwarded |
+|2xx | Success<br>æ“ä½œå·²æˆåŠŸå®Œæˆ                     | 200 OK|
+|3xx | Redirection<br>è¯·æ±‚è¢«é‡å®šå‘                   | 300 Multiple Choices<br>302 Moved Temporarily|
+|4xx | Client Error<br>è¯·æ±‚åŒ…å«é”™è¯¯çš„æ–‡æ³•ï¼Œæˆ–è€…æ— æ³•åœ¨æœ¬æœåŠ¡å™¨ä¸Šå®Œæˆ | 401 Unauthorized<br>408 Request Timeout
+|5xx | Server Error<br>è¯·æ±‚æœ‰æ•ˆï¼Œä½†æœåŠ¡å™¨æ— æ³•å®Œæˆ    | 503 Service Unavailable<br>505 Version Not Supported
+|6xx | Global Failure<br>è¯·æ±‚åœ¨ä»»ä½•æœåŠ¡å™¨ä¸Šéƒ½æ— æ³•å®Œæˆ| 600 Busy Everywhere<br>603 Decline
 
-¹ØÓÚÃ¿¸ö´íÎóÂëµÄ¾ßÌåº¬Òå¼ûÕâÀï£º[sip Response Codes(ÏìÓ¦Âë)]()
-¹ØÓÚ´íÎóµÄ´¦Àí¼ûÕâÀï£º[...(ÂÔ)ÎÄÕÂ¸ù¾Ý¹¤×÷Óöµ½µÄÔÙ²¹³ä...]()
+å…³äºŽæ¯ä¸ªé”™è¯¯ç çš„å…·ä½“å«ä¹‰è§è¿™é‡Œï¼š[sip Response Codes(å“åº”ç )]()
+å…³äºŽé”™è¯¯çš„å¤„ç†è§è¿™é‡Œï¼š[...(ç•¥)æ–‡ç« æ ¹æ®å·¥ä½œé‡åˆ°çš„å†è¡¥å……...]()
 
 
-#### SIPÏûÏ¢Í·Óò
+#### SIPæ¶ˆæ¯å¤´åŸŸ
 
-> Ç°6¸öÍ·ÓòÊÇËùÓÐSIPÏûÏ¢ÖÐµÄ±ØÐèµÄÍ·Óò
+> å‰6ä¸ªå¤´åŸŸæ˜¯æ‰€æœ‰SIPæ¶ˆæ¯ä¸­çš„å¿…éœ€çš„å¤´åŸŸ
 
-| ÏûÏ¢Í·Óò | ÃèÊö| 
+| æ¶ˆæ¯å¤´åŸŸ | æè¿°| 
 |:---|:---|
-| Via | ÓÃÓÚ¼ÇÂ¼ÇëÇó¾­ÓÉµÄÂ·¾¶<br>Àý£º<br>Via: SIP/2.0/UDP 192.168.78.165:44794;branch=z9hG4bK-d87543-0625ef7c430eb355-1--d87543-;rport<br>Via:...<br>...<br>ViaÍ·ÓòÊÇ±»·þÎñÆ÷²åÈërequestÖÐ£¬ÓÃÀ´¼ì²éÂ·ÓÉ»·µÄ£¬²¢ÇÒ¿ÉÒÔÊ¹response¸ù¾ÝviaÕÒµ½·µ»ØµÄÂ·¡£**Ëü²»»á¶ÔÎ´À´µÄrequest »òÕßÊÇresponseÔì³ÉÓ°Ïì** |
+| Via | ç”¨äºŽè®°å½•è¯·æ±‚ç»ç”±çš„è·¯å¾„<br>ä¾‹ï¼š<br>Via: SIP/2.0/UDP 192.168.78.165:44794;branch=z9hG4bK-d87543-0625ef7c430eb355-1--d87543-;rport<br>Via:...<br>...<br>Viaå¤´åŸŸæ˜¯è¢«æœåŠ¡å™¨æ’å…¥requestä¸­ï¼Œç”¨æ¥æ£€æŸ¥è·¯ç”±çŽ¯çš„ï¼Œå¹¶ä¸”å¯ä»¥ä½¿responseæ ¹æ®viaæ‰¾åˆ°è¿”å›žçš„è·¯ã€‚**å®ƒä¸ä¼šå¯¹æœªæ¥çš„request æˆ–è€…æ˜¯responseé€ æˆå½±å“** |
 | 
-| Call-ID | ÓÃÓÚÎ¨Ò»±êÊ¶Ò»¸öÌØ¶¨µÄ»á»°»ò×¢²áÏûÏ¢<br>Ó¦¾ßÓÐËæ»úÐÔ£¬±£Ö¤È«ÇòÎ¨Ò» | Call-ID: NGNlM...SDF...DIyYjQ |
-| From | Ô´¶ËSIP URL£¬±êÊ¶ÇëÇó·¢ËÍ·½£»UAC±¾µØ±êÇ©<br>Àý£º<br>From: `"8888"<sip:8888@192.168.78.141>`;tag=b40d6a51<br>Èç¹ûÒ»¸öSIPÏûÏ¢ÖÐÃ»ÓÐContact»òÕßRecord-RouteÍ·Óò£¬ÄÇÃ´callee¾Í»á¸ù¾ÝFromÍ·Óò×÷ÎªºóÐøµÄRequestÏûÏ¢Í·ÖÐµÄÏà¹ØÍ·ÓòµÄÄÚÈÝ£¬±ÈÈç£ºÈç¹ûAlice´òÒ»¸öµç»°¸øBob£¬FromÍ·ÓòµÄÄÚÈÝÊÇ From:Alice<sip:alice@example.org>¡£ÄÇÃ´Bob´ò¸øAliceÊ±¾Í»áÊ¹ÓÃ sip:alice@example.org×÷ÎªToÍ·ÓòºÍRequest-URIÍ·ÓòµÄÄÚÈÝ<br>**×ÜµÄÀ´Ëµ£¬Èç¹ûÓÐRoute£¬request¾ÍÓ¦¸Ã¸ù¾ÝRoute·¢ËÍ£¬Èç¹ûÃ»ÓÐ¾Í¸ù¾ÝContactÍ·Óò·¢ËÍ£¬Èç¹ûÁ¬Contact¶¼Ã»ÓÐ£¬¾Í¸ù¾ÝFromÍ·Óò·¢ËÍ** |
-| To   | Ä¿±êSIP URL£¬±êÊ¶ÇëÇó½ÓÊÜ·½£»UAS±¾µØ±êÇ©<br>Àý£º<br>INVITE ÖÐµÄTo: `"1212"<sip:1212@192.168.78.141>`;<br>180ÏìÓ¦ÖÐµÄTo: `"1212"<sip:1212@192.168.78.141>`;tag=e9f70d91(ÓÉuasÌí¼Ó£© |
-| Max-Forwards | ÏûÏ¢×î´ó×ª·¢´ÎÊý¡£·þÎñÃ¿´Î×ª·¢ÏûÏ¢Ê±½«´ËÓòÖµ¼õ1£¬µ±±ä³É0Ê±£¬·þÎñÆ÷·¢ËÍ 483ÏìÓ¦£¨Too Many Hops response£©|  |
-| Cseq | ÇëÇóÐòÁÐºÅ£¬ÓÃÓÚÇø·ÖÍ¬Ò»¸ö»á»°ÖÐµÄ²»Í¬ÇëÇó |
+| Call-ID | ç”¨äºŽå”¯ä¸€æ ‡è¯†ä¸€ä¸ªç‰¹å®šçš„ä¼šè¯æˆ–æ³¨å†Œæ¶ˆæ¯<br>åº”å…·æœ‰éšæœºæ€§ï¼Œä¿è¯å…¨çƒå”¯ä¸€ | Call-ID: NGNlM...SDF...DIyYjQ |
+| From | æºç«¯SIP URLï¼Œæ ‡è¯†è¯·æ±‚å‘é€æ–¹ï¼›UACæœ¬åœ°æ ‡ç­¾<br>ä¾‹ï¼š<br>From: `"8888"<sip:8888@192.168.78.141>`;tag=b40d6a51<br>å¦‚æžœä¸€ä¸ªSIPæ¶ˆæ¯ä¸­æ²¡æœ‰Contactæˆ–è€…Record-Routeå¤´åŸŸï¼Œé‚£ä¹ˆcalleeå°±ä¼šæ ¹æ®Fromå¤´åŸŸä½œä¸ºåŽç»­çš„Requestæ¶ˆæ¯å¤´ä¸­çš„ç›¸å…³å¤´åŸŸçš„å†…å®¹ï¼Œæ¯”å¦‚ï¼šå¦‚æžœAliceæ‰“ä¸€ä¸ªç”µè¯ç»™Bobï¼ŒFromå¤´åŸŸçš„å†…å®¹æ˜¯ From:Alice<sip:alice@example.org>ã€‚é‚£ä¹ˆBobæ‰“ç»™Aliceæ—¶å°±ä¼šä½¿ç”¨ sip:alice@example.orgä½œä¸ºToå¤´åŸŸå’ŒRequest-URIå¤´åŸŸçš„å†…å®¹<br>**æ€»çš„æ¥è¯´ï¼Œå¦‚æžœæœ‰Routeï¼Œrequestå°±åº”è¯¥æ ¹æ®Routeå‘é€ï¼Œå¦‚æžœæ²¡æœ‰å°±æ ¹æ®Contactå¤´åŸŸå‘é€ï¼Œå¦‚æžœè¿žContactéƒ½æ²¡æœ‰ï¼Œå°±æ ¹æ®Fromå¤´åŸŸå‘é€** |
+| To   | ç›®æ ‡SIP URLï¼Œæ ‡è¯†è¯·æ±‚æŽ¥å—æ–¹ï¼›UASæœ¬åœ°æ ‡ç­¾<br>ä¾‹ï¼š<br>INVITE ä¸­çš„To: `"1212"<sip:1212@192.168.78.141>`;<br>180å“åº”ä¸­çš„To: `"1212"<sip:1212@192.168.78.141>`;tag=e9f70d91(ç”±uasæ·»åŠ ï¼‰ |
+| Max-Forwards | æ¶ˆæ¯æœ€å¤§è½¬å‘æ¬¡æ•°ã€‚æœåŠ¡æ¯æ¬¡è½¬å‘æ¶ˆæ¯æ—¶å°†æ­¤åŸŸå€¼å‡1ï¼Œå½“å˜æˆ0æ—¶ï¼ŒæœåŠ¡å™¨å‘é€ 483å“åº”ï¼ˆToo Many Hops responseï¼‰|  |
+| Cseq | è¯·æ±‚åºåˆ—å·ï¼Œç”¨äºŽåŒºåˆ†åŒä¸€ä¸ªä¼šè¯ä¸­çš„ä¸åŒè¯·æ±‚ |
 | | |
-| Contact | ºóÐøRequest½«¸ù¾ÝContactÍ·ÓòµÄÄÚÈÝ¾ö¶¨Ä¿µÄµØµÄµØÖ·£¬Í¬Ê±½«ContactÍ·ÓòµÄÄÚÈÝ·Åµ½Request-URIÖÐ |
-| Record-Route/Route |  Record-RouteÍ·ÓòÒ»°ãÊÇ±»proxies²åÈëµ½requestÖÐµÄ£¬ÕâÑùºóÐøµÄRequestÈçºÎÓÐ×ÅºÍÇ°ÃæÒ»ÑùµÄcall-id¾Í»á±»Â·ÓÉµ½ÕâÐ©proxies£¬ËüÒ²»á±»User Agent×÷Îª·¢ËÍºóÐørequestµÄÒÀ¾Ý£¬Record-RouteÓÃÓÚ¼ÇÂ¼Â·ÓÉÂ·¾¶¡£½«À´ÓÃÀ´¹¹ÔìrequestÖÐµÄRouteÍ·Óò<br>ÏêÏ¸Ï¸½Ú¿ÉÒÔ²Î¿¼http://blog.csdn.net/stefmoon/article/details/5532441 |
+| Contact | åŽç»­Requestå°†æ ¹æ®Contactå¤´åŸŸçš„å†…å®¹å†³å®šç›®çš„åœ°çš„åœ°å€ï¼ŒåŒæ—¶å°†Contactå¤´åŸŸçš„å†…å®¹æ”¾åˆ°Request-URIä¸­ |
+| Record-Route/Route |  Record-Routeå¤´åŸŸä¸€èˆ¬æ˜¯è¢«proxiesæ’å…¥åˆ°requestä¸­çš„ï¼Œè¿™æ ·åŽç»­çš„Requestå¦‚ä½•æœ‰ç€å’Œå‰é¢ä¸€æ ·çš„call-idå°±ä¼šè¢«è·¯ç”±åˆ°è¿™äº›proxiesï¼Œå®ƒä¹Ÿä¼šè¢«User Agentä½œä¸ºå‘é€åŽç»­requestçš„ä¾æ®ï¼ŒRecord-Routeç”¨äºŽè®°å½•è·¯ç”±è·¯å¾„ã€‚å°†æ¥ç”¨æ¥æž„é€ requestä¸­çš„Routeå¤´åŸŸ<br>è¯¦ç»†ç»†èŠ‚å¯ä»¥å‚è€ƒhttp://blog.csdn.net/stefmoon/article/details/5532441 |
 | | | 
-| Supported | ÁÐ¾Ù³öUAC»òÕßUASÖ§³ÖµÄÀ©Õ¹ | 
-| Allow | ÁÐ¾Ù³öUAC»òÕßUASÖ§³ÖµÄ·½·¨(method) |
-| Accept | ½ÓÊÜµÄÏûÏ¢Ìå(Body)Ð­Òé£¬±ÈÈçHttp¡¢SDP|
-| PRACK | SIP¿ÉÑ¡µÄÀ©Õ¹·½Ê½£¬ÓÃÓÚÖ§³ÖÁÙÊ±Ó¦´ðµÄ¿É¿¿ÐÔ£¬ÊÇ±£Ö¤ÁÙÊ±ÏûÏ¢(101-199)¿É¿¿´«ÊäµÄ»úÖÆ¡£<br>PRACKµÄÊµÏÖ£ºUACÓëUAS¶ÔÊÇ·ñÖ§³Ö¸ÃÀ©Õ¹µÄÐ­ÉÌ£¬¾ÍÊÇÍ¨¹ýÒ»¸öoption tag -- 100rel<br>²Î¿¼ÎÄÕÂ£º¡¶ÓÐ¹ØSIPÖÐµÄPRACKµÄº¬ÒåºÍÊ¹ÓÃ?¡·http://blog.chinaunix.net/uid-790245-id-2037585.html<>
- ¡¶SIP ¡ª¡ªÁË½âPRACK¡·http://blog.csdn.net/wind19/article/details/7440839 |
+| Supported | åˆ—ä¸¾å‡ºUACæˆ–è€…UASæ”¯æŒçš„æ‰©å±• | 
+| Allow | åˆ—ä¸¾å‡ºUACæˆ–è€…UASæ”¯æŒçš„æ–¹æ³•(method) |
+| Accept | æŽ¥å—çš„æ¶ˆæ¯ä½“(Body)åè®®ï¼Œæ¯”å¦‚Httpã€SDP|
+
 
 | |
 |:---| 
-| ÆäÓàÊ¡ÂÔ |
-
-
-
-### Ò»¸ö¼òµ¥µÄÀý×Ó(½¨Á¢¡¢ÐÞ¸ÄºÍ¿ØÖÆ¶àÃ½Ìå»á»°)
-
-> https://www.ibm.com/developerworks/cn/opensource/os-cn-sip-intro/#major4
+| å…¶ä½™çœç•¥ |
 
 
 
@@ -187,7 +183,7 @@ SIPÊÇÒ»¸öÐÅÁîÐ­Òé£¬Ëü¶ÔÓ¦ÓÚ´«Í³µç»°ÍøÂçÖÐµÄºô½ÐÐÅÁîÐ­Òé£¨±ÈÈçSS7 ISUP£©¡£¹¹½¨Ò»¸
 
 
 
-¸½£ºrfc3261ÎÄµµ½á¹¹
+
 
 [001]:https://raw.githubusercontent.com/TongxinV/xxxx001/master/assets/p-sip-001.gif
 [002]:https://raw.githubusercontent.com/TongxinV/xxxx001/master/assets/p-sip-002.gif
