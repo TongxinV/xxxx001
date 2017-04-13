@@ -10,14 +10,22 @@
 
 SIP（会话发起协议）属于IP应用层协议，用于在IP网上为用户提供会话应用。会话（Session）指两方或多方用户之间的语音、视频、及其他媒体形式的通信，具体可能是IP电话、会议、即时消息等等
 
-<center>![p-sip-0001](https://raw.githubusercontent.com/TongxinV/xxxx001/master/assets/p-sip-0001.gif)</center>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/TongxinV/xxxx001/master/assets/p-sip-0001.gif" alt="p-sip-0001">
+  
+</p>
+
 
 
 1.2 协议栈
 
 SIP是一个信令协议，它对应于传统电话网络中的呼叫信令协议（比如SS7 ISUP）。构建一个完整多媒体通信架构还需要结合其他一些协议，必要的有：RTP，用于媒体传输；RSVP，用于QOS保证等等
 
-<center>![p-sip-0002](https://raw.githubusercontent.com/TongxinV/xxxx001/master/assets/p-sip-0002.gif)</center>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/TongxinV/xxxx001/master/assets/p-sip-0002.gif" alt="p-sip-0002">
+
+</p>
+
 
 
 1.3 基本功能
@@ -28,8 +36,10 @@ SIP是一个信令协议，它对应于传统电话网络中的呼叫信令协�
 
 一个**创建会话**的简单的例子如下图所示：
 
-
-<center>![p-sip-001][001]</center>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/TongxinV/xxxx001/master/assets/p-sip-001.gif" alt="p-sip-001">
+  
+</p>
 
 
 ```
@@ -40,7 +50,10 @@ SIP是一个信令协议，它对应于传统电话网络中的呼叫信令协�
 
 一个**修改会话**的简单例子如下图所示：
 
-<center>![p-sip-002][002]</center>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/TongxinV/xxxx001/master/assets/p-sip-002.gif" alt="p-sip-002">
+  
+</p>
 
 ```
 会话中的任意一方可以发送一个SIP请求消息（reINVITE），其中包含提议的新的会话参数，请求修改二者之间的会话；
@@ -49,7 +62,10 @@ SIP是一个信令协议，它对应于传统电话网络中的呼叫信令协�
 
 一个**结束会话**的简单例子如下图所示：
 
-<center>![p-sip-003][003]</center>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/TongxinV/xxxx001/master/assets/p-sip-003.gif" alt="p-sip-003">
+  
+</p>
 
 ```
 会话中的任意一方可以发送一个SIP请求消息（BYE），请求结束会话；
@@ -60,25 +76,32 @@ SIP是一个信令协议，它对应于传统电话网络中的呼叫信令协�
 
 > 用于支持用户（终端）的移动性。猜测参与的服务器为注册服务器（Register Server）加位置服务器（Location Server）
 
-<center>![p-sip-004][004]</center>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/TongxinV/xxxx001/master/assets/p-sip-004.gif" alt="p-sip-004">
+  
+</p>
 
 
 ### 2.SIP体系结构(基本网络模型)
 
 > SIP协议组件：SIP 用户代理（User Agent，UA）和 SIP 用户服务器（User Server，US）
 
-<center>![p-sip-005][005]</center>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/TongxinV/xxxx001/master/assets/p-sip-005.png" alt="p-sip-005">
+  
+</p>
 
 **用户代理UA**本身又可分为：客户机端UAC（User Agent Client，用户代理客户机）和服务器端UAS（User Agent Server，用户代理服务器）。用户代理客户机是发起请求的主叫应用；客户代理服务器是通话的被呼叫端，主要负责接受、重定向或者拒绝请求，给到来的请求发送响应。用户代理在发起呼叫的时候它是用户代理客户端，而当被呼叫的时候它是用户代理服务器端
 
 **用户服务器US**是 SIP 消息在到达其最终目的地前所经过的逻辑节点，这些服务器用于对请求进行路由和重定向，既进行名字解析和用户定位。主要包括以下几种服务器：
-```
-注册服务器（Registrar Server）：负责接收和处理 REGISTER 请求的服务器；
-有状态代理服务器（Proxy Server）：负责接收和转发SIP请求。可解析并重构SIP消息的部分信息。但是这些重构不会影响请求或会话的状态
-无状态代理服务器（Stateless Server）：其负责将上游的请求向下游转发和将下游的响应向上游转发，其不纪录请求或会话的状态
-重定向服务器（Redirect Server）：负责将请求的地址映射为新地址；它对请求进行重定向但是不参与事务的处理
-位置服务器（Location Server）：跟踪用户的位置；
-```
+
+* 注册服务器(Registrar Server)：负责接收和处理 REGISTER 请求的服务器；
+* 有状态代理服务器(Proxy Server)：负责接收和转发SIP请求。可解析并重构SIP消息的部分信息。但是这些重构不会影响请求或会话的状态
+* 无状态代理服务器(Stateless Server)：其负责将上游的请求向下游转发和将下游的响应向上游转发，其不纪录请求或会话的状态
+* 重定向服务器(Redirect Server)：负责将请求的地址映射为新地址；它对请求进行重定向但是不参与事务的处理
+* 位置服务器(Location Server)：跟踪用户的位置；
+
+
 
 ### 3.SIP协议结构
 
@@ -93,7 +116,10 @@ SIP是一个信令协议，它对应于传统电话网络中的呼叫信令协�
 
 **SIP事务**：利用SIP实现的功能(比如语音业务、三方通话等)是通过SIP一些原子性的基本功能（比如注册（registration），发起会话（Initiation）、会话结束等）**组合**而成。每个原子性基本功能是通过一个SIP操作完成的。SIP操作基于类似HTTP的请求/响应事务模型，每个操作的调用过程体现为一个所谓**事务**。其中SIP请求消息中的方法（Method）指示出调用的操作
 
-<center>![p-sip-006][006]</center>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/TongxinV/xxxx001/master/assets/p-sip-006.png" alt="p-sip-006">
+  
+</p>
 
 下表是在RFC 3261中定义的一些基本方法及其对应的SIP操作(不是全部):
 
@@ -108,7 +134,10 @@ SIP是一个信令协议，它对应于传统电话网络中的呼叫信令协�
 
 **SIP消息**：SIP 消息有两类：请求消息（request）和响应消息（response）。除了第一行分别是请求行（Request-Line）和状态行（Status-Line）以外(有统称为起始行start line)，SIP请求消息和SIP响应消息的剩下部分的组成基本类似，包括消息头域（message header）和消息体（message body）两部分
 
-<center>![p-sip-007][007]</center>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/TongxinV/xxxx001/master/assets/p-sip-007.png" alt="p-sip-007">
+  
+</p>
 
 
 
