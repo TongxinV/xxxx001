@@ -212,23 +212,190 @@ SIP是一个信令协议，它对应于传统电话网络中的呼叫信令协�
 
 
 
-### 5.建立 SIP 会话流程实例(建立、修改和控制多媒体会话)
+### 5.建立SIP会话流程实例(建立、修改和控制多媒体会话)
 
-> 简单介绍一下 SIP 协议如何建立、修改和控制多媒体会话。这个事例介绍SIP的基本功能：用户定位、会话请求、通过协商会话参数建立会话和解除会话连接。 参考连接：https://www.ibm.com/developerworks/cn/opensource/os-cn-sip-intro/#major4
+> 介绍SIP协议如何建立、修改和控制多媒体会话。这个事例介绍SIP的基本功能：用户定位、会话请求、通过协商会话参数建立会话和解除会话连接。 参考连接：https://www.ibm.com/developerworks/cn/opensource/os-cn-sip-intro/#major4
+
+> 在学习SIP会自己搭建SIP服务器抓包学习，但是并不能真正贴近实际，下面例子虽然复杂了一点，但能理解更多东西。建议简单的会话先理解了之后，再过来看这部分内容
 
 
-
-
+场景：Tom 在他的 PC 上使用一个 SIP 的应用程序呼叫 Internet 上另一个 SIP 电话用户 Jerry。
 
 1. 注册过程
 
+SIP 会话初始化协议的注册过程是建立用户当前 IP 地址与用户统一资源标识符之间的对应关系。
 
+
+UA(用户)首先向服务器发送REGISTER请求。请求经过 P-CSCF（**代理**呼叫会话控制功能） 和 I-CSCF（**询问**呼叫会话控制功能）为 Tom 指定一个 S-CSCF（**服务**呼叫会话控制功能）。S-CSCF 负责根据请求信息建立用户标识与终端 IP 地址的对应绑定关系。<br>
+（注：P-CSCF 是终端向网络中发送所有 SIP 消息的惟一入口。该实体在注册过程中用于 SIP 出站代理，注册完成后服务于所有其他 SIP 信令；注册完成后，后续请求或响应不再经过I-CSCF）
+
+     REGISTER sip: telcomx.tel.com SIP2.0 
+     From:<sip: tom@telcomx.tel.com>;tag=pohjaxx 
+     To:<sip: tom@telcomx.com> 
+     Via:SIP/2.0/UDP[4444::2:3:4:5];branch=xo93sle 
+     Route: sip:[5555::a:f:f:e];lr 
+     Contact:<sip:[4444::2:3:4:5]>;expires=600000 
+     Call-ID: apb304a94sslfeiasle93aj11 
+     Authorization:Digest username="tom@telcomx.tel.com", 
+                  realm="telcomx.tel.com", 
+                  nonce="", 
+                  uri="sip:telcomx.tel.com", 
+                  response=""
+     CSeq: 25 REGISTER 
+     Content-Length:0
+
+* Route 标识请求路由的下一节点<br>
+* Contact 中定义了 IP 地址与 SIP 统一资源标识符的绑定持续时间(expires)<br>
+* Call-ID 和 CSeq 消息头惟一标识本次事务<br>
+
+请求发送到该 S-CSCF 节点上， S-CSCF返回401（未授权）响应要求Tom进行认证，终端UA将发送第二个REGISTER请求，第二个请求包含相同的有关注册信息，但是第二个REGISTER产生一个新的Call-ID、Cseq号码、branch参数以及一个新的From标签，并且该REGISTER会带入新的安全认证标签信息
+
+     REGISTER sip: telcomx.tel.com SIP2.0 
+     From:<sip: tom@telcomx.com>;tag=6e87wa9 
+     To:<sip: tom@telcomx.tel.com> 
+     Via:SIP/2.0/UDP[4444::2:3:4:5];branch=u2x9s7 
+     Route: sip:[5555::a:f:f:e];lr 
+     Contact:<sip:[4444::2:3:4:5]>;expires=600000 
+     Call-ID: apb304a94sslfaser2le93aj22 
+     Authorization:Digest username="tom@telcomx.tel.com", 
+                  realm="telcomx.tel.com", 
+                  nonce="A34Cm+FVa73YTUGpGMBIs34P,algorithm=AKAv1-MD5", 
+                  uri="sip:telcomx.tel.com", 
+                  response="6629fac4969a87854152369874c43fd1"
+     CSeq: 47 REGISTER 
+     Content-Length:0
+
+注:第二次注册请求会填写相应的认证密钥信息。认证过程成功，服务器US将对UA进行注册。即服务器创建一个绑定关系，绑定To消息头中公共用户标识和Contact中的IP访问地址。随后服务器向终端发送响应。
+
+     SIP/2.0 200 OK 
+     Via:SIP/2.0/UDP icscf1.tel.com;branch=21ksi9 
+     Via:SIP/2.0/UDP pcscf1.tel.com;branch=2x7as2 
+     Via:SIP/2.0/UDP[4444::2:3:4:5];branch=u2x9s7 
+     From:<sip: tom@telcomx.tel.com>;tag=6e87wa9 
+     To:<sip: tom@telcomx.tel.com>;tag=kotimaex 
+     Contact:<sip:[4444::2:3:4:5]>;expires=600000 
+     Service-Route:sip:telcomx@scscf1.tel.com;lr 
+     Call-ID: apb304a94sslfaser2le93aj22 
+     CSeq: 47 REGISTER 
+     Content-Length:0
+
+服务器将自己的访问地址通过Service-Route消息头返回给终端，该响应送回的路径是所有接收过REGISTER请求的网络单元，因为各个网络单元在接收 REGISTER 时都把自己的地址放在了Via消息头的顶端。这时终端注册已经成功。
+
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/TongxinV/xxxx001/master/assets/p-sip-hhjl-001.jpg" alt="p-sip-hhjl-001">
+  
+</p>
 
 2. 会话建立
 
-3. 会话建立过程中的会话媒体参数协商
+Tom 通过 Jerry 的 SIP 标识呼叫 Jerry，这个统一资源标识符称作 SIP URI。SIP URI 很像一个 E-mail 地址，典型的统一资源标识符包括一个用户名和主机名。假设 Jerry 的统一资源标识符为 sip: jerry@california.tel.com。主机名 california.tel.com 是 Jerry 的本地 SIP 服务供应商即 Jerry 的归属域。Tom 使用自己的统一资源标识符发送请求。Tom 的统一资源标识符：sip: tom@telcomx.tel.com。其中 telcomx.tel.com 是 Tom 的 SIP 服务供应商
 
-4. 会话的释放
+Tom 的软电话发送一个含有 Jerry 的统一资源标识符地址的 INVITE 请求。INVITE 是 SIP 的一个请求，其用于请求方发起请求希望服务方应答。建立会话的过程主要有以下几步：
+
+* 使用 Jerry 的统一资源标识符创建 INVITE 请求
+* 在 Contact 消息头中设置自己的访问 IP 地址与端口号，确保对端 Jerry 所有的响应都能直接包含以能发回到该终端
+* 将注册过程中所存储的S-CSCF访问地址信息添加到消息的Route中，这样避免每次发送SIP请求需要通过I-CSCF查找S-CSCF的开销
+* 将出站代理P-CSCF的访问地址也添加到Route消息头顶端生成消息路由
+* 请求**去除Route中标识自己的访问条目**后，按照Route顶端地址发送到出站代理P-CSCF上，**在Record-Route和Via中添加P-CSCF访问条目**，确保请求的响应路由能够返回到自身节点。
+* 转发INVITE请求到Route定义的下一个节点，请求发送到S-CSCF节点上，首先去除Route中标识自己的访问条目，将S-CSCF访问条目添加到Record-Route和Via中，查询DNS服务获得用户Jerry的SIP URI所归属的域，将请求转发到Jerry所归属域的I-CSCF节点上；
+* 在Jerry归属域的I-CSCF节点上，首先**添加Jerry自己的访问条目(Route)**并将该访问条目添加到Via消息头中，查询SLF获取Jerry的HSS服务器地址，并查询HSS获取与用户Jerry相绑定的S-CSCF节点访问地址，将INVITE请求转发到该S-CSCF 节点上；
+* 请求到达Jerry归属域的S-CSCF节点上，首先从路由Route消息头中删除标识自己的访问条目，在Record-Route中添加该访问条目，将用户Jerry的统一资源标识符替换为注册的联系地址，转发请求到下一个节点；
+* 消息到达Jerry的P-CSCF代理节点上，其转发请到用户Jerry的 IP 地址上；
+
+这时 INVITE 请求已经到达用户Jerry的终端上，该终端设备保存Tom的Contact消息头，生成相应响应信息，并设置响应Contact消息头为Jerry终端的IP地址/端口，将Record-Route和Via消息头复制到响应中，并基于Via消息头发送响应；<br>
+当响应到达用于Tom终端时，Tom终端也会保存用户Jerry的Contact信息，这样双方都知道对方直接访问的IP地址和端口，之后可以直接发送请求到对方终端了(**没有Route要求的情况下**)
+
+**INVITE 请求**
+
+     INIVTE sip:jerry@california.tel.com 
+     Via: SIP/2.0/UDP[4444::2:3:4:5];branch=8ulse1 
+     Route:<sip:[5555::a:b:c:d];lr> 
+     Route:<sip:telcomx@scscf1.tel.com;lr> 
+     Contact:<sip:[4444::2:3:4:5]:1537> 
+     From:<sip: tom@telcomx.tel.com>;tag=6e87wa9 
+     To:<sip: jerry@california.tel.com> 
+     Call-ID: apb03a0s09dkjdfoaidy49555 
+     CSeq: 1 INVITE 
+     Max-Forwards: 70 
+     Content-Length:183 
+    （必须的空行）
+    （SDP 请求消息体）
+
+**183“会话进行中”响应**
+
+     SIP/2.0 183 Session in Progress 
+     Via: SIP/2.0/UDP scscf2.california.tel.com;branch=12fd3 
+     Via: SIP/2.0/UDP icscf2.california.tel.com;branch=24re3 
+     Via: SIP/2.0/UDP scscf1.tel.com;branch=64w32 
+     Via: SIP/2.0/UDP pcscf1.tel.com;branch=412d2 
+     Via: SIP/2.0/UDP[4444::2:3:4:5];branch=8ulse1 
+     Record-Route:<sip pcscf2.california.tel.com;lr> 
+     Record-Route:<sip scscf2.california.tel.com;lr> 
+     Record-Route:<sip scscf1.tel.com;lr> 
+     Record-Route:<sip pcscf1.tel.com;lr> 
+     Route:<sip:telcomx@scscf1.tel.com;lr> 
+     Contact:<sip:[4444:5:6:7:8]:1078> 
+     From:<sip: jerry@california.tel.com>;tag=e42q14d 
+     To:<sip: tom@telcomx.tel.com>;tag=6e87wa9 
+     Call-ID: apb03a0s09dkjdfoaidy49555 
+     CSeq: 2 183 
+     Max-Forwards: 70 
+     Content-Length:165 
+    （必须的空行）
+    （SDP 请求消息体）
+
+Tom发送INVITE请求后需要等待Jerry的响应，如果等待超时则需要重传一个INVITE请求，如果128秒后仍收不到响应，就宣告本次会话建立失败。例如本例中该呼叫漂洋过海，因此到达Jerry终端可能超过超时等待时间，为了避免Tom终端频繁地重发INVITE请求，Jerry的P-CSCF收到INVITE请求后，返回一个100Trying临时响应。这表明开始负责INVITE请求
+
+SIP会话信号流程图：
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/TongxinV/xxxx001/master/assets/p-sip-hhjl-002.jpg" alt="p-sip-hhjl-002">
+  
+</p>
+
+
+3. 会话建立时的会话媒体参数协商
+
+> SIP Using SDP with Offer/answer Model。
+
+呼叫建立时的媒体协商方式具体有六种可能的组合方式，主要了解了INVITE和200组合。**如何协商？answer包含与offer相同的媒体类型以及各类媒体支持的编码解码类型**
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/TongxinV/xxxx001/master/assets/p-sip-hhjl-003.jpg" alt="p-sip-hhjl-003">
+  
+</p>
+
+4. 会话建立后的会话媒体参数修改
+
+会话中的任何时刻，任何参加者都可以发送新的offer修改会话特性，或者由于终端的媒体能力、地址等信息改变。可以增加新的媒体流，删除已经存在的媒体流，或者改变已经存在的媒体流的参数(比如修改媒体属性中的方向参数实现通话保持)等。相对与呼叫建立前的多种方案呼叫建立后的媒体参数修改要简单得多，使用的请求消息是INVITE，但由于是在呼叫过程中，我们通常称其为re-INVITE以示区别。于是呼叫建立后的媒体修改又分为两种：
+
+(1)re-INVITE携带媒体能力，通过200OK携带协商结果<br>
+(2)re-INVITE不携带媒体能力，200OK携带媒体能力，ACK携带协商结果
+
+
+5. 会话的释放
+
+Tom和Jerry通话完毕，Jerry按下终端设备的红色挂机按钮断掉呼叫。生成一个BYE请求，沿着与其他请求相同的路由发送给Tom终端，同时还会释放本次会话建立的媒体PDP(Packet Data Protocol分组数据协议)上下文。 Tom终端收到该请求后也会立刻释放它的PDP上下文，同时向Jerry终端返回一个200(OK)的响应来应答BYE请求。经过路径上的网络单元会清除与本次会话有关的所有会话状态和信息
+
+     BYE sip:[4444::2:3:4:5] SIP/2.0 
+     Route:<sip:pcscf2.california.com;lr> 
+     Route:<sip:scscf2.california.com;lr> 
+     Route:<sip:scscf1.tel.com;lr> 
+     Route:<sip:pcscf1.tel.com;lr> 
+     To:<sip: tom@telcomx.tel.com>;tag=6e87wa9 
+     From:<sip: jerry@california.tel.com> 
+     Call-ID: w273alskdjb732s07yad22 
+     CSeq: 15 BYE 
+     Max-Forwards: 70 
+     Content-Length:0
+
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/TongxinV/xxxx001/master/assets/p-sip-hhjl-004.jpg" alt="p-sip-hhjl-004">
+  
+</p>
+
 
 
 
