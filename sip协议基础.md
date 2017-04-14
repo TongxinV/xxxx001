@@ -117,7 +117,7 @@ SIP是一个信令协议，它对应于传统电话网络中的呼叫信令协�
 **SIP事务**：利用SIP实现的功能(比如语音业务、三方通话等)是通过SIP一些原子性的基本功能（比如注册（registration），发起会话（Initiation）、会话结束等）**组合**而成。每个原子性基本功能是通过一个SIP操作完成的。SIP操作基于类似HTTP的请求/响应事务模型，每个操作的调用过程体现为一个所谓**事务**。其中SIP请求消息中的方法（Method）指示出调用的操作
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/TongxinV/xxxx001/master/assets/p-sip-006.png" alt="p-sip-006">
+  <img src="https://raw.githubusercontent.com/TongxinV/xxxx001/master/assets/p-sip-006.gif" alt="p-sip-006">
   
 </p>
 
@@ -191,7 +191,6 @@ SIP是一个信令协议，它对应于传统电话网络中的呼叫信令协�
 | 消息头域 | 描述| 
 |:---|:---|
 | Via | 用于记录请求经由的路径<br>例：<br>Via: SIP/2.0/UDP 192.168.78.165:44794;branch=z9hG4bK-d87543-0625ef7c430eb355-1--d87543-;rport<br>Via:...<br>...<br>Via头域是被服务器插入request中，用来检查路由环的，并且可以使response根据via找到返回的路。**它不会对未来的request 或者是response造成影响** |
-| 
 | Call-ID | 用于唯一标识一个特定的会话或注册消息<br>应具有随机性，保证全球唯一 | Call-ID: NGNlM...SDF...DIyYjQ |
 | From | 源端SIP URL，标识请求发送方；UAC本地标签<br>例：<br>From: `"8888"<sip:8888@192.168.78.141>`;tag=b40d6a51<br>如果一个SIP消息中没有Contact或者Record-Route头域，那么callee就会根据From头域作为后续的Request消息头中的相关头域的内容，比如：如果Alice打一个电话给Bob，From头域的内容是 From:Alice<sip:alice@example.org>。那么Bob打给Alice时就会使用 sip:alice@example.org作为To头域和Request-URI头域的内容<br>**总的来说，如果有Route，request就应该根据Route发送，如果没有就根据Contact头域发送，如果连Contact都没有，就根据From头域发送** |
 | To   | 目标SIP URL，标识请求接受方；UAS本地标签<br>例：<br>INVITE 中的To: `"1212"<sip:1212@192.168.78.141>`;<br>180响应中的To: `"1212"<sip:1212@192.168.78.141>`;tag=e9f70d91(由uas添加） |
@@ -218,6 +217,8 @@ SIP是一个信令协议，它对应于传统电话网络中的呼叫信令协�
 
 
 1. 注册过程
+
+
 
 2. 会话建立
 
