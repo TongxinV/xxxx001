@@ -180,7 +180,8 @@ SIP是一个信令协议，它对应于传统电话网络中的呼叫信令协�
 |5xx | Server Error<br>请求有效，但服务器无法完成    | 503 Service Unavailable<br>505 Version Not Supported
 |6xx | Global Failure<br>请求在任何服务器上都无法完成| 600 Busy Everywhere<br>603 Decline
 
-关于每个错误码的具体含义见这里：[sip Response Codes(响应码)]()
+关于每个错误码的具体含义见这里：[sip Response Codes(响应码)](https://github.com/TongxinV/xxxx001/blob/master/sip%20Response%20Codes(%E5%93%8D%E5%BA%94%E7%A0%81).md#sip-response-codes响应码)
+
 关于错误的处理见这里：[...(略)文章根据工作遇到的再补充...]()
 
 
@@ -203,7 +204,7 @@ SIP是一个信令协议，它对应于传统电话网络中的呼叫信令协�
 | Supported | 列举出UAC或者UAS支持的扩展 | 
 | Allow | 列举出UAC或者UAS支持的方法(method) |
 | Accept | 接受的消息体(Body)协议，比如Http、SDP|
-
+| Replace | Used to logically replace an existing SIP dialog with a new SIP dialog |
 
 | |
 |:---| 
@@ -214,6 +215,9 @@ SIP是一个信令协议，它对应于传统电话网络中的呼叫信令协�
 ### 5.建立 SIP 会话流程实例(建立、修改和控制多媒体会话)
 
 > 简单介绍一下 SIP 协议如何建立、修改和控制多媒体会话。这个事例介绍SIP的基本功能：用户定位、会话请求、通过协商会话参数建立会话和解除会话连接。 参考连接：https://www.ibm.com/developerworks/cn/opensource/os-cn-sip-intro/#major4
+
+
+
 
 
 1. 注册过程
